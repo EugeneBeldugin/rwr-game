@@ -1,0 +1,76 @@
+.stadium {
+    background: url(../img/trava.png);
+    margin: 100px auto 0;
+    width: 1600px;
+    position: relative;
+    padding: 10px 10px;
+    overflow: scroll;
+}
+.track {
+    position: relative;
+    left: 0px;
+    height: 110px;
+    display: flex;
+}
+.track + .track {
+    margin-top: 50px;
+}
+.player {
+    height: 100px;
+    width: 110px;
+    margin-top: 5px;
+    background: center no-repeat;
+    transition: left linear 2s;
+}
+.zaec {
+    background-image: url(../img/zaec.png);
+}
+.volk {
+    background-image: url(../img/volk.png);
+}
+.barrier {
+    position: absolute;
+    width: 55px;
+    height:110px;
+    background: center no-repeat;
+    top: 5px;
+}
+.kamen {
+    background-image: url(../img/kamen.png);
+    background-position: center 75px;
+}
+.yagoda {
+    background-image: url(../img/yagoda.png) ;
+}
+.cell {
+    height: 110px;
+    min-width: 112px;
+    margin-right: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.501);
+}
+
+.disabled {
+    display: none;
+}
+
+h1 {
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+}
+
+.stadium::-webkit-scrollbar {
+    width: 0;
+    height: 10px;
+    background: #fff;
+}
+
+.stadium::-webkit-scrollbar-thumb {
+    background-color: #b7b7b7;
+    border-radius: 25px;
+}
+
+.stadium::-webkit-scrollbar-thumb:hover {
+    background-color: #a9a9a9;
+}
